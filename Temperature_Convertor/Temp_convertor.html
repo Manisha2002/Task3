@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!--  This file has been downloaded from bootdey.com @bootdey on twitter -->
+    <!--  All snippets are MIT license http://bootdey.com/license -->
+    <title>bs4 header with particles js - Bootdey.com</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./convertor.js"></script>
+    <link rel="stylesheet" href="./convertor.css">
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <section class="section home-5-bg" id="home">
+      <div id="particles-js"></div>
+      <div class="bg-overlay"></div>
+      <div class="home-center">
+        <div class="home-desc-center">
+          <div class="container">
+            <div class="justify-content-center row">
+              <div class="col-lg-7">
+                <div class="mt-40 text-center home-5-content">
+                  <div class="home-icon mb-4">
+                    <i class="mdi mdi-pinwheel mdi-spin text-white h1"></i>
+                  </div>
+                  <h1
+                    id="h1top"
+                    class="text-white font-weight-normal home-5-title mb-0"
+                  >
+                    Temperature Convertor
+                  </h1>
+                  <div id="centerdiv">
+                    <h3 id="ent">Enter the Temperature?</h3>
+                    <input type="number" name="" id="in" placeholder="0">
+                    <h3 id="con">Convert To?</h3>
+                    <select name="" id="menuu">
+                      <option value="1">Celsius</option>
+                      <option value="2">Fahrenheit</option>
+                    </select>
+                    <button class="button-30" id="btt" role="button" onclick="convert()">Convert</button>
+                    <input type="text" id="out">
+                    <div id="t">
+                      <h4 id="temp">°C</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="">
+        <!-- Footer -->
+        <footer
+          class="text-center text-white"
+          style="background-color:  #092b4d;"
+        >
+          <!-- Grid container -->
+          <div class="container p-4 pb-0" id="cont1">
+            <!-- Section: CTA -->
+            <section class="">
+              <p class="d-flex justify-content-center align-items-center">
+                <h3 style="position: relative; top: -20px;">Thank You!</h3>
+              </p>
+            </section>
+            <!-- Section: CTA -->
+          </div>
+          <!-- Grid container -->
+
+          <!-- Copyright -->
+          <div
+            class="text-center p-3"
+            style="background-color: rgba(0, 0, 0, 0.2)"
+          >
+            © 2022 Copyright:Manisha Waldia  
+            <a class="text-white" href="#"
+              >Temp.com</a
+            >
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
+    </section>
+    <script type="text/javascript">
+      particlesJS("particles-js", {
+        particles: {
+          number: {
+            value: 80,
+            density: {
+              enable: true,
+              value_area: 800,
+            },
+          },
+          color: {
+            value: "#ffffff",
+          },
+          shape: {
+            type: "circle",
+            stroke: {
+              width: 0,
+              color: "#000000",
+            },
+            polygon: {
+              nb_sides: 5,
+            },
+            image: {
+              src: "img/github.svg",
+              width: 100,
+              height: 100,
+            },
+          },
+          opacity: {
+            value: 0.5,
+            random: false,
+            anim: {
+              enable: false,
+              speed: 1,
+              opacity_min: 0.1,
+              sync: false,
+            },
+          },
+          size: {
+            value: 20,
+            random: true,
+            anim: {
+              enable: false,
+              speed: 40,
+              size_min: 0.1,
+              sync: false,
+            },
+          },
+          line_linked: {
+            enable: true,
+            distance: 150,
+            color: "#ffffff",
+            opacity: 0.22,
+            width: 1,
+          },
+          move: {
+            enable: true,
+            speed: 6,
+            direction: "none",
+            random: false,
+            straight: false,
+            out_mode: "out",
+            attract: {
+              enable: false,
+              rotateX: 600,
+              rotateY: 1200,
+            },
+          },
+        },
+        interactivity: {
+          detect_on: "canvas",
+          events: {
+            onhover: {
+              enable: true,
+              mode: "repulse",
+            },
+            onclick: {
+              enable: true,
+              mode: "push",
+            },
+            resize: true,
+          },
+          modes: {
+            grab: {
+              distance: 400,
+              line_linked: {
+                opacity: 1,
+              },
+            },
+            bubble: {
+              distance: 400,
+              size: 40,
+              duration: 2,
+              opacity: 8,
+              speed: 3,
+            },
+            repulse: {
+              distance: 200,
+            },
+            push: {
+              particles_nb: 4,
+            },
+            remove: {
+              particles_nb: 2,
+            },
+          },
+        },
+        retina_detect: true,
+        config_demo: {
+          hide_card: false,
+          background_color: "#b61924",
+          background_image: "",
+          background_position: "50% 50%",
+          background_repeat: "no-repeat",
+          background_size: "cover",
+        },
+      });
+    </script>
+  </body>
+</html>
